@@ -170,9 +170,9 @@ class UserHistorySimulator:
         
         watch_history_df = pd.DataFrame(watch_history)
         
-        print(f"✓ Generated {len(watch_history_df)} watch records")
-        print(f"✓ {watch_history_df['user_id'].nunique()} unique users")
-        print(f"✓ {watch_history_df['drama_id'].nunique()} unique dramas watched")
+        print(f"[OK] Generated {len(watch_history_df)} watch records")
+        print(f"[OK] {watch_history_df['user_id'].nunique()} unique users")
+        print(f"[OK] {watch_history_df['drama_id'].nunique()} unique dramas watched")
         print(f"\nRating distribution:")
         print(watch_history_df['rating'].value_counts().sort_index())
         
@@ -194,7 +194,7 @@ def create_hybrid_ready_dataset(kdrama_filepath, output_prefix='kdrama'):
     # Load the drama dataset
     print("\n1. Loading drama dataset...")
     dramas_df = pd.read_csv(kdrama_filepath)
-    print(f"✓ Loaded {len(dramas_df)} dramas")
+    print(f"[OK] Loaded {len(dramas_df)} dramas")
     
     # Find column names dynamically
     recommender = KDramaRecommender()
@@ -248,8 +248,8 @@ def create_hybrid_ready_dataset(kdrama_filepath, output_prefix='kdrama'):
     watch_history_clean.to_csv(watch_history_file, index=False)
     show_features.to_csv(features_file, index=False)
     
-    print(f"✓ Saved watch history to: {watch_history_file}")
-    print(f"✓ Saved show features to: {features_file}")
+    print(f"[OK] Saved watch history to: {watch_history_file}")
+    print(f"[OK] Saved show features to: {features_file}")
     
     # Display sample data
     print("\n" + "="*60)
@@ -271,7 +271,7 @@ def create_hybrid_ready_dataset(kdrama_filepath, output_prefix='kdrama'):
     print(f"Average ratings per user: {len(watch_history_clean) / watch_history_clean['user_id'].nunique():.1f}")
     print(f"Average ratings per show: {len(watch_history_clean) / watch_history_clean['show_id'].nunique():.1f}")
     
-    print("\n✅ Dataset ready for hybrid recommendation system!")
+    print("\n[OK] Dataset ready for hybrid recommendation system!")
     print(f"\nNext steps:")
     print(f"1. Use these files with the hybrid_recommender.py")
     print(f"2. Load: watch_history = pd.read_csv('{watch_history_file}')")
@@ -288,8 +288,8 @@ if __name__ == "__main__":
     print("2. Generate realistic simulated user watch history")
     print("3. Create files compatible with the hybrid recommender")
     
-    # UPDATE THIS PATH to your Korean drama CSV file
-    kdrama_file = 'korean_dramas.csv'
+    # Path to your Korean drama CSV (same as kdrama_recommender.py)
+    kdrama_file = 'kdrama_DATASET.csv'
     
     try:
         watch_history, show_features = create_hybrid_ready_dataset(
@@ -297,8 +297,8 @@ if __name__ == "__main__":
             output_prefix='kdrama'
         )
     except FileNotFoundError:
-        print(f"\n❌ File not found: {kdrama_file}")
-        print("\n📝 Instructions:")
+        print(f"\n[!] File not found: {kdrama_file}")
+        print("\nInstructions:")
         print("1. Download the dataset from Kaggle:")
         print("   https://www.kaggle.com/datasets/saikalbatyrbekova/korean-dramas-dataset-eda")
         print("2. Update the 'kdrama_file' variable in this script")

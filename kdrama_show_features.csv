@@ -1,0 +1,351 @@
+show_id,Title,genre,avg_rating,num_episodes
+drama_0000,Move to Heaven,"Life,  Drama,  Family ",9.2,10
+drama_0001,Twinkling Watermelon,"Romance, Youth, Drama, Fantasy",9.2,16
+drama_0002,Moving,"Action, Thriller, Mystery, Supernatural",9.1,20
+drama_0003,The Trauma Code: Heroes on Call ,"Action, Comedy, Drama, Medical",9.1,8
+drama_0004,Flower of Evil,"Thriller,  Romance,  Crime,  Melodrama ",9.1,16
+drama_0005,Hospital Playlist,"Friendship,  Romance,  Life,  Medical ",9.1,12
+drama_0006,Hospital Playlist 2,"Friendship,  Romance,  Life,  Medical ",9.1,12
+drama_0007,My Mister,"Psychological,  Life,  Drama,  Family ",9.1,16
+drama_0008,Reply 1988,"Comedy,  Romance,  Youth,  Family ",9.1,20
+drama_0009,Weak Hero Class 1,"Action, Youth, Drama",9.1,8
+drama_0010,Prison Playbook,"Comedy,  Crime,  Life,  Drama ",9.1,16
+drama_0011,Lovely Runner,"Music, Comedy, Romance, Fantasy",9.0,16
+drama_0012,Alchemy of Souls,"Action, Historical, Romance, Fantasy ",9.0,20
+drama_0013,Study Group,"Action, Thriller, Comedy, Youth",9.0,10
+drama_0014,Extraordinary Attorney Woo,"Law, Romance, Life, Drama ",9.0,16
+drama_0015,Mr. Queen,"Historical,  Mystery,  Comedy,  Romance ",9.0,20
+drama_0016,Mother,"Thriller,  Mystery,  Psychological,  Melodrama ",9.0,16
+drama_0017,It's Okay to Not Be Okay,"Psychological,  Comedy,  Romance,  Drama ",9.0,16
+drama_0018,Crash Landing on You,"Military,  Comedy,  Romance,  Political ",9.0,16
+drama_0019,Vincenzo,"Comedy,  Law,  Crime,  Drama ",9.0,20
+drama_0020,Navillera,"Friendship,  Life,  Drama,  Family ",9.0,12
+drama_0021,Signal,"Thriller,  Mystery,  Sci-Fi ",9.0,16
+drama_0022,Mr. Sunshine,"Military,  Historical,  Romance,  Melodrama ",8.9,24
+drama_0023,Happiness,"Action,  Thriller,  Drama,  Fantasy ",8.9,12
+drama_0024,Kingdom: Season 2,"Thriller,  Historical,  Horror,  Supernatural ",8.9,6
+drama_0025,The Good Bad Mother,"Comedy, Life, Drama, Family",8.9,14
+drama_0026,The Glory,"Thriller, Drama, Melodrama",8.9,8
+drama_0027,SKY Castle,"Mystery,  Psychological,  Drama,  Family ",8.9,20
+drama_0028,Tomorrow,"Action, Thriller, Drama, Fantasy ",8.9,16
+drama_0029,Healer,"Action,  Thriller,  Mystery,  Romance ",8.9,20
+drama_0030,Stranger,"Thriller,  Mystery,  Law,  Drama ",8.9,16
+drama_0031,Twenty-Five Twenty-One,"Romance, Life, Drama, Melodrama ",8.8,16
+drama_0032,Tale of the Nine-Tailed 1938,"Historical, Horror, Romance, Fantasy",8.8,12
+drama_0033,The Red Sleeve,"Historical, Romance, Drama, Melodrama ",8.8,17
+drama_0034,Goblin,"Comedy,  Romance,  Fantasy,  Melodrama ",8.8,16
+drama_0035,The Uncanny Counter,"Action,  Mystery,  Drama,  Supernatural ",8.8,16
+drama_0036,Mouse,"Thriller,  Mystery,  Sci-Fi ",8.7,20
+drama_0037,Kingdom,"Thriller,  Historical,  Horror,  Political ",8.8,6
+drama_0038,Weightlifting Fairy Kim Bok Joo,"Comedy,  Romance,  Youth,  Sports ",8.8,16
+drama_0039,D.P.,"Action,  Military,  Comedy,  Drama ",8.8,6
+drama_0040,The Devil Judge,"Mystery,  Law,  Crime,  Drama ",8.8,16
+drama_0041,The Penthouse,"Thriller,  Mystery,  Drama,  Family ",8.8,21
+drama_0042,Youth of May,"Historical,  Romance,  Drama,  Melodrama ",8.8,12
+drama_0043,Taxi Driver,"Action,  Thriller,  Mystery,  Drama ",8.8,16
+drama_0044,Life on Mars,"Action,  Mystery,  Comedy,  Supernatural ",8.8,16
+drama_0045,A Shop for Killers,"Action, Thriller, Mystery, Drama",8.8,8
+drama_0046,Beyond Evil,"Thriller,  Mystery,  Psychological,  Drama ",8.8,16
+drama_0047,Racket Boys,"Friendship,  Comedy,  Youth,  Sports ",8.8,16
+drama_0048,Hometown Cha-Cha-Cha,"Comedy,  Romance,  Life ",8.8,16
+drama_0049,Six Flying Dragons,"Action,  Historical,  Drama,  Political ",8.8,50
+drama_0050,The Penthouse 2,"Thriller,  Mystery,  Drama,  Family ",8.8,13
+drama_0051,Our Beloved Summer,"Romance, Life, Youth, Drama ",8.7,16
+drama_0052,The Guest,"Thriller,  Mystery,  Horror,  Supernatural ",8.8,16
+drama_0053,Dear My Friends,"Life,  Drama,  Family,  Melodrama ",8.7,16
+drama_0054,While You Were Sleeping,"Mystery,  Romance,  Drama,  Fantasy ",8.7,32
+drama_0055,Chicago Typewriter,"Comedy,  Romance,  Supernatural,  Political ",8.7,16
+drama_0056,18 Again,"Romance,  Life,  Drama,  Fantasy ",8.7,16
+drama_0057,Flex X Cop,"Action, Thriller, Mystery, Comedy",8.7,16
+drama_0058,Arthdal Chronicles Part 2,"Historical,  Romance,  Fantasy,  Political ",8.7,6
+drama_0059,Arthdal Chronicles Part 3,"Historical,  Romance,  Fantasy,  Political ",8.7,6
+drama_0060,Through the Darkness,"Thriller, Mystery, Crime, Drama ",8.7,12
+drama_0061,Dr. Romantic 2,"Romance,  Drama,  Medical,  Melodrama ",8.7,16
+drama_0062,Defendant,"Thriller,  Mystery,  Law,  Drama ",8.7,18
+drama_0063,Our Blues,"Romance, Life, Drama, Melodrama",8.7,20
+drama_0064,Sweet Home,"Horror,  Drama,  Sci-Fi,  Supernatural ",8.7,10
+drama_0065,"Kill Me, Heal Me","Psychological,  Comedy,  Romance,  Drama ",8.7,20
+drama_0066,Moon Lovers,"Historical,  Romance,  Melodrama ",8.7,20
+drama_0067,A Business Proposal,"Comedy, Romance, Drama",8.7,12
+drama_0068,Misaeng,"Friendship,  Business,  Life,  Drama ",8.7,20
+drama_0069,Strong Woman Do Bong Soon,"Action,  Thriller,  Comedy,  Romance,  Drama,  Supernatural ",8.7,16
+drama_0070,The Fiery Priest,"Action,  Mystery,  Comedy,  Crime ",8.7,40
+drama_0071,Bloodhounds ,"Action, Thriller, Crime, Drama",8.7,8
+drama_0072,My Name,"Action,  Thriller,  Crime ",8.7,8
+drama_0073,Hotel del Luna,"Horror,  Comedy,  Romance,  Fantasy ",8.7,16
+drama_0074,Begins Youth,"Life, Youth, Drama, Fantasy",8.7,12
+drama_0075,Hot Stove League,"Drama,  Sports,  Melodrama ",8.7,16
+drama_0076,Dr. Romantic,"Romance,  Drama,  Medical ",8.7,20
+drama_0077,Descendants of the Sun,"Action,  Comedy,  Romance,  Melodrama ",8.7,16
+drama_0078,Law School,"Mystery,  Law,  Crime,  Drama ",8.7,16
+drama_0079,Strangers from Hell,"Thriller,  Horror,  Psychological,  Drama ",8.7,10
+drama_0080,Live,"Friendship,  Comedy,  Romance,  Crime ",8.7,18
+drama_0081,Tunnel,"Thriller,  Mystery,  Sci-Fi,  Fantasy ",8.7,16
+drama_0082,My Liberation Notes,"Romance, Life, Drama, Melodrama",8.6,16
+drama_0083,Partners for Justice 2,"Mystery,  Law,  Drama,  Medical ",8.6,32
+drama_0084,Jewel in the Palace,"Food,  Historical,  Romance,  Medical ",8.6,54
+drama_0085,"It's Okay, That's Love","Psychological,  Comedy,  Romance,  Drama ",8.6,16
+drama_0086,Love Scout,"Business, Romance, Life, Drama",8.6,12
+drama_0087,Little Women,"Action, Thriller, Mystery, Drama",8.6,12
+drama_0088,Ghost Doctor,"Comedy, Medical, Fantasy, Supernatural",8.6,16
+drama_0089,Eulachacha Waikiki,"Comedy,  Life,  Youth,  Drama ",8.6,20
+drama_0090,The Bridal Mask,"Action,  Historical,  Romance,  Political ",8.6,28
+drama_0091,Revenant ,"Thriller, Mystery, Horror, Supernatural",8.6,12
+drama_0092,Children of Nobody,"Thriller,  Mystery,  Psychological,  Crime,  Drama ",8.6,32
+drama_0093,Good Manager,"Business,  Comedy,  Crime,  Drama ",8.6,20
+drama_0094,The King of Pigs,"Thriller, Mystery, Drama",8.6,12
+drama_0095,Big Mouth,"Thriller, Mystery, Law, Drama",8.6,16
+drama_0096,Go Back Couple,"Comedy,  Romance,  Life,  School,  Drama,  Family,  Supernatural ",8.6,12
+drama_0097,Empress Ki,"Historical,  Romance,  Melodrama,  Political ",8.6,51
+drama_0098,My Father is Strange,"Comedy,  Romance,  Drama,  Family ",8.6,52
+drama_0099,High School Return of a Gangster ,"Life, Youth, Fantasy",8.6,8
+drama_0100,Once Again,"Comedy,  Romance,  Drama,  Family ",8.6,100
+drama_0101,Missing,"Thriller,  Mystery,  Supernatural ",8.6,12
+drama_0102,Stranger 2,"Thriller,  Mystery,  Law,  Drama ",8.6,16
+drama_0103,Designated Survivor,"Thriller,  Mystery,  Drama,  Political ",8.6,16
+drama_0104,Juvenile Justice,"Law, Drama",8.6,10
+drama_0105,Cruel City,"Action,  Thriller,  Romance,  Crime ",8.6,20
+drama_0106,My Perfect Stranger ,"Mystery, Romance, Drama, Sci-Fi",8.6,16
+drama_0107,My Love from the Star,"Comedy,  Romance,  Drama,  Supernatural ",8.6,21
+drama_0108,Mystic Pop-Up Bar,"Mystery,  Comedy,  Family,  Fantasy ",8.6,12
+drama_0109,Age of Youth,"Friendship,  Romance,  Life,  Youth ",8.6,12
+drama_0110,Just Between Lovers,"Psychological,  Romance,  Melodrama ",8.6,16
+drama_0111,Save Me,"Action,  Thriller,  Mystery,  Drama ",8.6,16
+drama_0112,Bad and Crazy,"Action, Thriller, Mystery, Comedy",8.6,12
+drama_0113,365,"Thriller,  Mystery,  Drama,  Fantasy ",8.6,24
+drama_0114,The Master's Sun,"Horror,  Comedy,  Romance,  Supernatural ",8.6,17
+drama_0115,Avengers Social Club,"Friendship,  Comedy,  Life,  Drama ",8.6,12
+drama_0116,Rebel,"Action,  Thriller,  Historical,  Romance ",8.5,30
+drama_0117,Chief Detective 1958,"Action, Thriller, Historical, Comedy",8.5,10
+drama_0118,Nobody Knows,"Thriller,  Mystery,  Drama,  Melodrama ",8.5,16
+drama_0119,Bad Guys,"Action,  Thriller,  Psychological,  Crime ",8.5,11
+drama_0120,Beautiful World,"Life,  School,  Family,  Melodrama ",8.5,16
+drama_0121,Marry My Husband,"Comedy, Romance, Drama, Fantasy",8.5,16
+drama_0122,Arthdal Chronicles Part 1,"Historical,  Romance,  Fantasy,  Political ",8.5,6
+drama_0123,Kairos,"Action,  Thriller,  Drama,  Sci-Fi ",8.5,16
+drama_0124,I Hear Your Voice,"Mystery,  Law,  Romance,  Supernatural ",8.5,18
+drama_0125,What's Wrong with Secretary Kim,"Friendship,  Business,  Comedy,  Romance ",8.5,16
+drama_0126,Vagabond,"Action,  Thriller,  Mystery,  Crime ",8.5,16
+drama_0127,One Ordinary Day,"Thriller, Mystery, Law, Crime",8.5,8
+drama_0128,Reply 1997,"Comedy,  Romance,  Life,  Family ",8.5,16
+drama_0129,Doctor John,"Mystery,  Romance,  Life,  Medical ",8.5,32
+drama_0130,"Hi Bye, Mama!","Romance, Drama, Melodrama, Supernatural",8.5,16
+drama_0131,Voice,"Thriller, Mystery, Psychological",8.5,16
+drama_0132,Fight For My Way,"Business,  Comedy,  Romance,  Sports ",8.5,16
+drama_0133,Squid Game,"Action,  Thriller,  Mystery,  Drama ",8.5,9
+drama_0134,W,"Thriller, Comedy, Romance, Fantasy",8.5,16
+drama_0135,Queen Seon Duk,"Historical, Romance, Drama, Political",8.5,62
+drama_0136,Mad for Each Other,"Comedy, Romance, Drama",8.5,13
+drama_0137,Dali and the Cocky Prince,"Comedy,  Romance,  Drama ",8.5,16
+drama_0138,Thirty But Seventeen,"Music, Mystery, Comedy, Romance",8.5,32
+drama_0139,When the Camellia Blooms,"Thriller,  Comedy,  Romance,  Drama,  Family ",8.5,40
+drama_0140,Be Melodramatic,"Comedy, Romance, Life, Melodrama",8.5,16
+drama_0141,Good Partner,"Comedy, Law, Life, Drama",8.5,16
+drama_0142,Itaewon Class,"Business, Romance, Life, Drama",8.5,16
+drama_0143,Snowdrop,"Romance, Drama, Melodrama, Political",8.5,16
+drama_0144,Circle,"Thriller, Mystery, Sci-Fi",8.5,12
+drama_0145,Because This Is My First Life,"Comedy,  Romance,  Life,  Drama ",8.5,16
+drama_0146,The Princess's Man,"Action, Historical, Romance, Political",8.5,24
+drama_0147,Blind,"Thriller, Mystery, Drama",8.5,16
+drama_0148,Two Weeks,"Action, Thriller, Mystery, Drama",8.5,16
+drama_0149,"Work Later, Drink Now","Comedy, Life, Drama",8.5,12
+drama_0150,Dong Yi,"Adventure, Historical, Mystery, Romance",8.5,60
+drama_0151,Gaus Electronics,"Business, Comedy, Romance, Life",8.5,12
+drama_0152,Angel's Last Mission: Love,"Comedy, Romance, Drama, Fantasy",8.5,32
+drama_0153,The World of the Married,"Thriller, Romance, Drama, Melodrama",8.5,16
+drama_0154,Pyramid Game ,"Action, Thriller, Psychological, Drama",8.5,10
+drama_0155,All of Us Are Dead,"Action, Thriller, Horror, Sci-Fi",8.5,12
+drama_0156,Extracurricular,"Psychological, Crime, Youth, Drama",8.5,10
+drama_0157,Yumi's Cells,"Psychological,  Comedy,  Romance,  Drama ",8.5,14
+drama_0158,Lost,"Life, Drama, Melodrama",8.4,16
+drama_0159,The Atypical Family,"Comedy, Romance, Drama, Fantasy",8.4,12
+drama_0160,Queen In Hyun's Man,"Historical, Comedy, Romance, Fantasy",8.4,16
+drama_0161,One Dollar Lawyer,"Comedy, Law, Drama",8.4,12
+drama_0162,If You Wish Upon Me,"Romance, Life, Drama, Medical",8.4,16
+drama_0163,I'm Not a Robot,"Comedy, Romance, Drama, Sci-Fi",8.4,32
+drama_0164,Memorist,"Action, Thriller, Mystery, Supernatural",8.4,16
+drama_0165,Voice 2,"Thriller, Mystery, Psychological",8.4,12
+drama_0166,Doom at Your Service,"Comedy, Romance, Drama, Fantasy",8.4,16
+drama_0167,Duel,"Thriller, Mystery, Sci-Fi",8.4,16
+drama_0168,Search: WWW,"Business, Comedy, Romance, Drama",8.4,16
+drama_0169,"From Now On, Showtime!","Mystery, Comedy, Romance, Fantasy",8.4,16
+drama_0170,Hello Monster,"Thriller, Mystery, Psychological, Drama",8.4,16
+drama_0171,Parasyte: The Grey,"Action, Mystery, Horror, Sci-Fi",8.5,6
+drama_0172,Moon Embracing the Sun,"Historical, Romance, Supernatural, Political",8.4,20
+drama_0173,Train,"Thriller, Mystery, Sci-Fi",8.4,12
+drama_0174,Sh**ting Stars,"Comedy, Romance, Drama",8.4,16
+drama_0175,The Crowned Clown,"Historical, Romance, Melodrama, Political",8.4,16
+drama_0176,Mad Dog,"Action, Thriller, Mystery",8.4,16
+drama_0177,Birthcare Center,"Comedy, Life, Drama, Melodrama",8.4,8
+drama_0178,Nine: Nine Times Time Travel,"Mystery, Romance, Supernatural",8.4,20
+drama_0179,Extraordinary You,"Comedy, Romance, Youth, Fantasy",8.4,32
+drama_0180,Pinocchio,"Thriller, Mystery, Comedy, Romance",8.4,20
+drama_0181,Doctor Prisoner,"Thriller, Law, Crime, Medical",8.4,32
+drama_0182,Love All Play,"Romance, Drama, Sports, Melodrama",8.4,16
+drama_0183,My Unfamiliar Family,"Life, Drama",8.4,16
+drama_0184,Her Private Life,"Business, Comedy, Romance, Drama",8.4,16
+drama_0185,Age of Youth 2,"Mystery, Comedy, Romance, Life",8.4,14
+drama_0186,Secret,"Romance, Drama, Melodrama",8.4,16
+drama_0187,Military Prosecutor Doberman,"Action, Military, Mystery, Law",8.4,16
+drama_0188,Pachinko,"Historical, Romance, Drama, Melodrama",8.4,8
+drama_0189,My Roommate Is a Gumiho,"Comedy, Romance, Fantasy",8.4,16
+drama_0190,Yumi's Cells 2,"Comedy, Romance, Life",8.4,14
+drama_0191,My Country: The New Age,"Action, Historical, Romance, Drama",8.4,16
+drama_0192,Sell Your Haunted House,"Thriller, Mystery, Comedy, Fantasy",8.4,16
+drama_0193,Player,"Action, Thriller, Mystery, Comedy",8.4,14
+drama_0194,The Legend of the Blue Sea,"Comedy, Romance, Drama, Fantasy",8.4,20
+drama_0195,Come and Hug Me,"Thriller, Mystery, Romance, Melodrama",8.4,32
+drama_0196,Partners for Justice,"Thriller, Mystery, Law, Medical",8.4,32
+drama_0197,Seasons of Blossom,"Comedy, Romance, Youth, Drama",8.4,16
+drama_0198,The Tale of Nokdu,"Action, Historical, Comedy, Romance",8.4,32
+drama_0199,Psychopath Diary,"Thriller, Mystery, Comedy, Crime",8.4,16
+drama_0200,Knight Flower,"Historical, Mystery, Comedy, Drama",8.4,12
+drama_0201,The Beauty Inside,"Comedy, Romance, Melodrama, Supernatural",8.4,16
+drama_0202,Tale of the Nine-Tailed,"Thriller, Horror, Romance, Fantasy",8.4,16
+drama_0203,Love to Hate You,"Comedy, Law, Romance",8.4,10
+drama_0204,The Good Detective,"Action, Thriller, Mystery, Drama",8.4,16
+drama_0205,See You in My 19th Life,"Comedy, Romance, Drama, Fantasy",8.4,12
+drama_0206,He Is Psychometric,"Thriller, Mystery, Romance, Supernatural",8.4,16
+drama_0207,One Spring Night,"Romance, Life, Drama, Melodrama",8.4,32
+drama_0208,Soundtrack #1,"Music, Romance",8.4,4
+drama_0209,City Hunter,"Action, Thriller, Crime",8.4,20
+drama_0210,Class of Lies,"Thriller, Mystery, Law, Youth",8.3,16
+drama_0211,100 Days My Prince,"Historical, Comedy, Romance, Drama",8.3,16
+drama_0212,"At a Distance, Spring Is Green","Romance, Life, Youth",8.3,12
+drama_0213,Lie After Lie,"Thriller, Romance, Melodrama",8.3,16
+drama_0214,The Sound of Magic,"Music, Psychological, Drama, Fantasy",8.3,6
+drama_0215,The Mysterious Class,"Mystery, Horror, Youth, Supernatural",8.3,8
+drama_0216,Good Doctor,"Romance, Life, Drama, Medical",8.3,20
+drama_0217,"It's Okay, That's Friendship","Comedy, Life",8.3,1
+drama_0218,Rookie Cops,"Romance, Life, Youth, Drama ",8.3,16
+drama_0219,True Beauty,"Comedy, Romance, Youth, Drama",8.3,16
+drama_0220,Oh My Ghost,"Thriller, Comedy, Romance, Supernatural",8.3,16
+drama_0221,God's Gift: 14 Days,"Thriller, Mystery, Drama, Supernatural",8.3,16
+drama_0222,The Sound of Your Heart,"Comedy, Life, Sitcom",8.3,20
+drama_0223,The Veil,"Action, Thriller, Mystery, Crime",8.3,12
+drama_0224,Graceful Family,"Thriller, Mystery, Drama, Melodrama",8.3,16
+drama_0225,Gu Family Book,"Action, Historical, Romance, Fantasy ",8.3,24
+drama_0226,The Hymn of Death,"Music, Historical, Romance, Melodrama",8.3,6
+drama_0227,Jumong,"Adventure, Historical, Romance, Drama",8.3,81
+drama_0228,Vampire Prosecutor 2,"Action, Mystery, Drama, Supernatural",8.3,11
+drama_0229,Ugly Alert,"Business, Romance, Melodrama",8.3,133
+drama_0230,Misty,"Thriller, Mystery, Romance, Melodrama",8.3,16
+drama_0231,Voice 3: City of Accomplices,"Thriller, Mystery, Psychological, Crime",8.3,16
+drama_0232,Confession,"Thriller, Mystery, Law, Drama",8.3,16
+drama_0233,Again My Life,"Mystery, Law, Drama, Fantasy",8.3,16
+drama_0234,Money Heist: Korea - Joint Economic Area - Part 1,"Action, Thriller, Mystery, Crime",8.3,6
+drama_0235,Are You Human Too?,"Comedy, Romance, Sci-Fi, Fantasy",8.3,36
+drama_0236,Run On,"Romance, Life, Drama, Sports",8.3,16
+drama_0237,The Smile Has Left Your Eyes,"Thriller, Mystery, Romance, Drama",8.3,16
+drama_0238,Team Bulldog: Off-duty Investigation,"Action, Mystery, Comedy, Drama",8.3,12
+drama_0239,The Guardians,"Action, Thriller, Mystery, Law, Crime",8.3,32
+drama_0240,Terius Behind Me,"Action, Mystery, Comedy, Romance",8.3,32
+drama_0241,Hyena,"Mystery, Comedy, Law, Romance",8.3,16
+drama_0242,Touch Your Heart,"Comedy, Law, Romance, Drama",8.3,16
+drama_0243,Angry Mom,"Comedy, Drama, Melodrama",8.3,16
+drama_0244,Welcome 2 Life,"Comedy, Law, Romance, Fantasy",8.3,32
+drama_0245,Suspicious Partner,"Thriller, Comedy, Law, Romance",8.3,40
+drama_0246,Mine,"Thriller, Mystery, Drama",8.3,16
+drama_0247,When the Weather Is Fine,"Romance, Life, Drama, Melodrama",8.3,16
+drama_0248,Lawless Lawyer,"Action, Thriller, Law, Romance",8.3,16
+drama_0249,Crazy Love,"Comedy, Romance, Drama",8.3,16
+drama_0250,Buried Hearts,"Thriller, Mystery, Crime, Political",8.3,16
+drama_0251,WATCHER,"Thriller, Mystery, Drama, Political",8.3,16
+drama_0252,Five Enough,"Comedy, Romance, Drama, Melodrama",8.3,54
+drama_0253,Amanza,"Adventure, Life, Fantasy, Melodrama",8.3,10
+drama_0254,Light on Me,"Romance, Youth, Drama",8.3,16
+drama_0255,Bulgasal: Immortal Souls,"Thriller, Mystery, Drama, Fantasy",8.3,16
+drama_0256,Liar Game,"Thriller, Mystery, Psychological, Drama",8.3,12
+drama_0257,Tree With Deep Roots,"Historical, Mystery, Political",8.3,24
+drama_0258,49 Days,"Romance, Drama, Melodrama, Supernatural",8.3,20
+drama_0259,D-Day,"Romance, Drama, Medical",8.3,20
+drama_0260,Awaken,"Thriller, Mystery, Crime, Fantasy",8.3,16
+drama_0261,Oh My Venus,"Comedy, Law, Romance, Life",8.3,16
+drama_0262,Leverage,"Action, Mystery, Comedy, Crime",8.3,16
+drama_0263,The King's Affection,"Historical, Romance, Drama",8.3,20
+drama_0264,A Gentleman's Dignity,"Comedy, Romance, Drama, Melodrama",8.3,20
+drama_0265,Rookie Historian Goo Hae Ryung,"Historical, Comedy, Romance, Drama",8.3,40
+drama_0266,Coffee Prince,"Food, Comedy, Romance, Drama",8.3,17
+drama_0267,Ghost,"Thriller, Mystery",8.3,20
+drama_0268,Love Playlist: Season 4,"Romance, Life, Youth, Drama",8.3,16
+drama_0269,God's Quiz: Reboot,"Mystery, Medical",8.3,16
+drama_0270,My Dearest Nemesis,"Comedy, Romance",8.3,12
+drama_0271,Missing Noir M,"Thriller, Mystery, Drama",8.3,10
+drama_0272,Live Up to Your Name,"Historical, Romance, Medical, Fantasy",8.3,16
+drama_0273,Queen for Seven Days,"Historical, Romance, Melodrama, Political",8.3,20
+drama_0274,Memory,"Law, Romance, Life, Drama",8.3,16
+drama_0275,A Korean Odyssey,"Horror, Comedy, Romance, Fantasy",8.3,20
+drama_0276,Voice 4: Judgment Hour,"Action, Thriller, Mystery, Crime",8.3,14
+drama_0277,Wonderful World ,"Thriller, Mystery, Drama, Melodrama",8.3,14
+drama_0278,Divorce Attorney Shin,"Law, Drama",8.3,12
+drama_0279,The Auditors,"Action, Thriller, Mystery, Comedy",8.3,12
+drama_0280,Call It Love,"Romance, Drama, Melodrama",8.3,16
+drama_0281,Crash Course in Romance,"Thriller, Mystery, Comedy, Romance",8.3,16
+drama_0282,One Day Off ,"Food, Life, Drama",8.3,8
+drama_0283,My Sweet Mobster,"Comedy, Romance",8.3,16
+drama_0284,Queenmaker,"Business, Drama, Political",8.3,11
+drama_0285,King the Land,"Comedy, Romance",8.2,16
+drama_0286,Celebrity,"Thriller, Mystery, Drama",8.2,12
+drama_0287,Agency,"Business, Life, Drama",8.2,16
+drama_0288,Crash ,"Action, Thriller, Mystery, Comedy",8.1,12
+drama_0289,The Queen Who Crowns,"Historical, Romance, Drama, Political",8.1,12
+drama_0290,Miss Night and Day,"Mystery, Comedy, Romance, Fantasy",8.1,16
+drama_0291,Our Blooming Youth,"Historical, Mystery, Romance, Drama",8.1,20
+drama_0292,True to Love,"Comedy, Romance, Life, Melodrama",8.1,14
+drama_0293,Doctor Cha,"Comedy, Life, Drama, Medical",8.1,16
+drama_0294,The Secret Romantic Guesthouse ,"Historical, Mystery, Romance, Drama",8.1,18
+drama_0295,Unmasked ,"Thriller, Mystery, Comedy, Drama",8.0,12
+drama_0296,The Whirlwind ,"Thriller, Mystery, Drama, Political",8.0,12
+drama_0297,The Midnight Studio,"Romance, Drama, Fantasy",8.0,16
+drama_0298,Blood Free,"Thriller, Drama, Sci-Fi",8.0,10
+drama_0299,Missing Crown Prince,"Historical, Comedy, Romance, Political",8.0,20
+drama_0300,Brain Works,"Mystery, Comedy",8.0,16
+drama_0301,Captivating the King,"Historical, Romance, Drama, Melodrama",7.9,16
+drama_0302,For Eagle Brothers,"Comedy, Romance, Family",7.9,50
+drama_0303,Battle for Happiness ,"Thriller, Mystery, Drama",7.9,16
+drama_0304,Joseon Attorney: A Morality,"Historical, Law, Romance, Drama",7.9,16
+drama_0305,Delightfully Deceitful,"Comedy, Crime, Drama",7.8,16
+drama_0306,A Killer Paradox,"Thriller, Mystery, Psychological, Comedy",7.8,8
+drama_0307,Numbers ,"Action, Thriller, Mystery, Drama",7.8,12
+drama_0308,Delivery Man,"Mystery, Comedy, Romance, Supernatural",7.8,12
+drama_0309,The Witch ,"Mystery, Romance, Drama",7.7,10
+drama_0310,Payback: Money and Power,"Thriller, Mystery, Business, Drama",7.7,12
+drama_0311,The Escape of the Seven: Resurrection ,"Thriller, Mystery, Drama",7.7,16
+drama_0312,Lies Hidden in My Garden,"Thriller, Mystery, Psychological, Drama",7.7,8
+drama_0313,"Mi Na, Did You Change Your Profile Picture Again?",Romance,7.7,7
+drama_0314,Stealer: The Treasure Keeper,"Action, Adventure, Mystery, Comedy",7.7,12
+drama_0315,Love Song for Illusion,"Historical, Romance, Fantasy",7.6,16
+drama_0316,The 8 Show,"Thriller, Mystery, Psychological, Drama",7.6,8
+drama_0317,Oasis,"Romance, Youth, Drama, Melodrama",7.6,16
+drama_0318,The Midnight Romance in Hagwon,"Romance, Life, Melodrama",7.6,16
+drama_0319,Branding in Seongsu,"Thriller, Romance, Supernatural",7.6,24
+drama_0320,The Scandal of Chun Hwa,"Historical, Romance, Drama",7.6,10
+drama_0321,Pale Moon,"Thriller, Mystery, Romance, Drama",7.6,10
+drama_0322,Bitch X Rich,"Thriller, Mystery, Youth, Drama",7.5,10
+drama_0323,Su Ji & U Ri ,"Romance, Drama, Family, Medical",7.5,128
+drama_0324,Family: The Unbreakable Bond ,"Action, Thriller, Comedy, Drama",7.5,12
+drama_0325,Uncle Samsik,"Business, Drama, Political",7.5,16
+drama_0326,Hide ,"Thriller, Mystery, Drama",7.5,12
+drama_0327,The Heavenly Idol,"Comedy, Romance, Drama, Fantasy",7.5,12
+drama_0328,Queen of Divorce,"Action, Comedy, Romance",7.4,12
+drama_0329,Newtopia ,"Action, Horror, Romance, Fantasy",7.4,8
+drama_0330,Frankly Speaking,"Comedy, Romance, Drama",7.4,12
+drama_0331,The Bequeathed ,"Thriller, Mystery",7.4,6
+drama_0332,Pandora: Beneath the Paradise ,"Action, Thriller, Drama, Melodrama",7.4,16
+drama_0333,Queen of Masks,"Thriller, Mystery, Drama, Melodrama",7.3,16
+drama_0334,Motel California,"Romance, Drama",7.3,12
+drama_0335,LTNS,"Comedy, Drama",7.3,6
+drama_0336,The Real Has Come!,"Romance, Drama, Melodrama",7.3,50
+drama_0337,Kokdu: Season of Deity,"Comedy, Romance, Medical, Fantasy",7.2,16
+drama_0338,Nothing Uncovered ,"Thriller, Mystery, Drama, Melodrama",7.2,16
+drama_0339,Beauty and Mr. Romantic,"Romance, Drama, Family, Melodrama",7.2,50
+drama_0340,Kick Kick Kick Kick,"Comedy, Sitcom",7.2,12
+drama_0341,Strangers Again,"Law, Romance, Drama",7.2,12
+drama_0342,Race ,"Business, Romance, Drama, Melodrama",7.2,12
+drama_0343,Dare to Love Me,"Comedy, Romance",7.1,16
+drama_0344,Hierarchy,"Thriller, Mystery, Romance, Youth",6.9,7
+drama_0345,Oh! Youngsim ,"Comedy, Romance",6.9,10
+drama_0346,DNA Lover,"Comedy, Romance, Melodrama",6.9,16
+drama_0347,Our Love Triangle,"Romance, Youth",6.9,10
+drama_0348,The Brave Yong Su Jeong,"Romance, Drama, Melodrama",6.8,124
+drama_0349,Goodbye Earth,"Thriller, Psychological, Drama, Sci-Fi",6.4,12
