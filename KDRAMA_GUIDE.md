@@ -39,7 +39,21 @@ Update the filepath in the script:
 filepath = 'your_korean_dramas.csv'  # Change this line
 ```
 
-#### Option B: Full Hybrid System (Better Recommendations)
+#### Option B: Web app (recommended)
+
+Use the browser-based UI to get recommendations by drama name or by preferences (genres, tags, rating, year).
+
+```bash
+# Install dependencies (includes Flask)
+pip install -r requirements.txt
+
+# Run the web server (loads dataset on first request)
+python app.py
+```
+
+Then open **http://127.0.0.1:5000** in your browser.
+
+#### Option C: Full Hybrid System (Better Recommendations)
 
 Use when you:
 - Want the best quality recommendations

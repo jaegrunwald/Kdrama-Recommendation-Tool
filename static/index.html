@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Drama Recommender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f0d14;
+      --surface: #1a1720;
+      --surface2: #25212d;
+      --accent: #e84a7a;
+      --accent-dim: #c93d68;
+      --text: #f0eef4;
+      --text-muted: #9b96a6;
+      --border: #2d2938;
+      --success: #6bcf7f;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle { color: var(--text-muted); font-size: 1rem; }
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      background: var(--surface);
+      padding: 0.35rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .tab {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: color 0.2s, background 0.2s;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { background: var(--accent); color: #fff; }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 { font-size: 1rem; margin-bottom: 1rem; color: var(--text-muted); font-weight: 500; }
+    .input-wrap { margin-bottom: 1rem; }
+    .input-wrap:last-child { margin-bottom: 0; }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--surface2);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(232, 74, 122, 0.2);
+    }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+    .btn-primary:hover { background: var(--accent-dim); }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .datalist-suggest {
+      position: absolute;
+      left: 0; right: 0;
+      top: 100%;
+      margin-top: 2px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      max-height: 220px;
+      overflow-y: auto;
+      z-index: 10;
+    }
+    .datalist-suggest li {
+      list-style: none;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .datalist-suggest li:hover, .datalist-suggest li.focused { background: var(--surface); }
+    .search-wrap { position: relative; }
+    .results {
+      margin-top: 2rem;
+    }
+    .results h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+    .drama-cards {
+      display: grid;
+      gap: 1rem;
+    }
+    .drama-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .drama-card .name { font-weight: 600; font-size: 1.05rem; }
+    .drama-card .meta { font-size: 0.9rem; color: var(--text-muted); }
+    .drama-card .score { font-size: 0.85rem; color: var(--accent); }
+    .error-msg {
+      background: rgba(232, 74, 122, 0.15);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .loading { color: var(--text-muted); margin-top: 1rem; }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .chip {
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .chip:hover { border-color: var(--accent); }
+    .chip.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .chip-list { max-height: 140px; overflow-y: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>K-Drama Recommender</h1>
+      <p class="subtitle">Find your next favorite drama — by similarity or by mood</p>
+    </header>
+
+    <div class="tabs">
+      <button type="button" class="tab active" data-tab="similar">Similar to a drama</button>
+      <button type="button" class="tab" data-tab="preferences">By preferences</button>
+    </div>
+
+    <div id="panel-similar" class="panel active">
+      <div class="card">
+        <h2>Find dramas similar to one you love</h2>
+        <div class="input-wrap search-wrap">
+          <label for="drama-name">Drama name</label>
+          <input type="text" id="drama-name" placeholder="e.g. Crash Landing, Moving..." autocomplete="off" />
+          <ul class="datalist-suggest" id="suggest-list" hidden></ul>
+        </div>
+        <div class="input-wrap">
+          <label for="similar-n">Number of recommendations</label>
+          <input type="number" id="similar-n" min="1" max="20" value="10" />
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-similar">Get recommendations</button>
+      </div>
+    </div>
+
+    <div id="panel-preferences" class="panel">
+      <div class="card">
+        <h2>Filter by genres, tags, rating & year</h2>
+        <div class="input-wrap">
+          <label>Genres (click to select)</label>
+          <div class="chip-list chips" id="genre-chips"></div>
+        </div>
+        <div class="input-wrap">
+          <label>Tags (click to select)</label>
+          <div class="chip-list chips" id="tag-chips"></div>
+        </div>
+        <div class="row">
+          <div class="input-wrap">
+            <label for="min-rating">Min rating (0–10)</label>
+            <input type="number" id="min-rating" min="0" max="10" step="0.1" placeholder="e.g. 8" />
+          </div>
+          <div class="input-wrap">
+            <label for="pref-n">Number of recommendations</label>
+            <input type="number" id="pref-n" min="1" max="20" value="10" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-wrap">
+            <label for="year-min">Year from</label>
+            <input type="number" id="year-min" placeholder="e.g. 2015" />
+          </div>
+          <div class="input-wrap">
+            <label for="year-max">Year to</label>
+            <input type="number" id="year-max" placeholder="e.g. 2024" />
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn-preferences">Get recommendations</button>
+      </div>
+    </div>
+
+    <div class="results" id="results" hidden>
+      <h3 id="results-title">Recommendations</h3>
+      <div class="drama-cards" id="drama-cards"></div>
+      <p class="error-msg" id="results-error" hidden></p>
+    </div>
+    <p class="loading" id="loading" hidden>Loading…</p>
+  </div>
+
+  <script>
+    const API = '';
+    function getSuggestions() {
+      const q = (document.getElementById('drama-name').value || '').trim().toLowerCase();
+      if (!q.length) return [];
+      return window.allDramas.filter(d => d.toLowerCase().includes(q)).slice(0, 12);
+    }
+    function renderSuggestions() {
+      const list = document.getElementById('suggest-list');
+      const suggestions = getSuggestions();
+      if (!suggestions.length) { list.hidden = true; return; }
+      list.innerHTML = suggestions.map(s => `<li data-name="${s.replace(/"/g, '&quot;')}">${s}</li>`).join('');
+      list.hidden = false;
+      list.querySelectorAll('li').forEach((li, i) => {
+        li.addEventListener('click', () => {
+          document.getElementById('drama-name').value = li.dataset.name;
+          list.hidden = true;
+        });
+      });
+    }
+    document.getElementById('drama-name').addEventListener('input', () => renderSuggestions());
+    document.getElementById('drama-name').addEventListener('focus', () => renderSuggestions());
+    document.getElementById('drama-name').addEventListener('blur', () => setTimeout(() => { document.getElementById('suggest-list').hidden = true; }, 150));
+
+    document.querySelectorAll('.tab').forEach(t => {
+      t.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        document.getElementById('panel-' + t.dataset.tab).classList.add('active');
+      });
+    });
+
+    let selectedGenres = [];
+    let selectedTags = [];
+    function buildChips(containerId, list, selectedList, key) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = list.map(item => `<button type="button" class="chip" data-item="${item.replace(/"/g, '&quot;')}">${item}</button>`).join('');
+      container.querySelectorAll('.chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const item = chip.dataset.item;
+          const idx = selectedList.indexOf(item);
+          if (idx === -1) selectedList.push(item);
+          else selectedList.splice(idx, 1);
+          chip.classList.toggle('selected', selectedList.includes(item));
+        });
+      });
+    }
+    fetch(API + '/api/dramas').then(r => r.json()).then(data => {
+      window.allDramas = data.dramas || [];
+    }).catch(() => { window.allDramas = []; });
+    fetch(API + '/api/genres').then(r => r.json()).then(data => {
+      buildChips('genre-chips', data.genres || [], selectedGenres, 'genres');
+    }).catch(() => {});
+    fetch(API + '/api/tags').then(r => r.json()).then(data => {
+      buildChips('tag-chips', data.tags || [], selectedTags, 'tags');
+    }).catch(() => {});
+
+    function showLoading(show) {
+      document.getElementById('loading').hidden = !show;
+      document.getElementById('results').hidden = show;
+    }
+    function showResults(title, list, error) {
+      showLoading(false);
+      const block = document.getElementById('results');
+      const cardsEl = document.getElementById('drama-cards');
+      const errEl = document.getElementById('results-error');
+      block.hidden = false;
+      document.getElementById('results-title').textContent = title;
+      errEl.hidden = !error;
+      errEl.textContent = error || '';
+      if (error) { cardsEl.innerHTML = ''; return; }
+      cardsEl.innerHTML = list.map(d => {
+        const parts = [];
+        if (d.rating != null) parts.push(`Rating: ${d.rating}`);
+        if (d.year) parts.push(d.year);
+        if (d.genre) parts.push(d.genre);
+        const meta = parts.join(' · ');
+        const extra = d.similarity_score != null ? `Similarity: ${d.similarity_score}` : (d.preference_score != null ? `Score: ${d.preference_score}` : '');
+        return `<div class="drama-card"><span class="name">${escapeHtml(d.name)}</span>${meta ? `<span class="meta">${escapeHtml(meta)}</span>` : ''}${extra ? `<span class="score">${extra}</span>` : ''}</div>`;
+      }).join('');
+    }
+    function escapeHtml(s) {
+      const div = document.createElement('div');
+      div.textContent = s;
+      return div.innerHTML;
+    }
+
+    document.getElementById('btn-similar').addEventListener('click', () => {
+      const name = document.getElementById('drama-name').value.trim();
+      const n = parseInt(document.getElementById('similar-n').value, 10) || 10;
+      if (!name) { showResults('', [], 'Enter a drama name.'); return; }
+      showLoading(true);
+      fetch(API + '/api/similar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ drama_name: name, n: Math.max(1, Math.min(20, n)) })
+      }).then(r => r.json()).then(data => {
+        if (data.error && !data.recommendations?.length) {
+          showResults('', [], data.error);
+          return;
+        }
+        showResults('Similar dramas', data.recommendations || []);
+      }).catch(() => showResults('', [], 'Request failed.'));
+    });
+
+    document.getElementById('btn-preferences').addEventListener('click', () => {
+      const minRating = document.getElementById('min-rating').value ? parseFloat(document.getElementById('min-rating').value) : null;
+      const yearMin = document.getElementById('year-min').value ? parseInt(document.getElementById('year-min').value, 10) : null;
+      const yearMax = document.getElementById('year-max').value ? parseInt(document.getElementById('year-max').value, 10) : null;
+      const n = parseInt(document.getElementById('pref-n').value, 10) || 10;
+      showLoading(true);
+      fetch(API + '/api/by-preferences', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          genres: selectedGenres,
+          tags: selectedTags,
+          min_rating: minRating,
+          year_min: yearMin,
+          year_max: yearMax,
+          n: Math.max(1, Math.min(20, n))
+        })
+      }).then(r => r.json()).then(data => {
+        showResults('Recommendations for you', data.recommendations || [], data.error || null);
+      }).catch(() => showResults('', [], 'Request failed.'));
+    });
+  </script>
+</body>
+</html>
